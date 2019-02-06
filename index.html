@@ -18,7 +18,11 @@
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="basket-navigation">
-					<li class="basket-link">Вход</li>
+					<li class="basket-link">
+					<a class="basket-link" href="basket.html">
+					Вход
+					</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -32,47 +36,40 @@
 				<h2 class="visually-hidden">Услуги</h2>
 				<ul class="service-list">
 					<li class="service-item">
+					<a href="service-item1.html" aria-label="каталог веб-сайтов">
 					<h3>
-						<a href="service-item1.html">
-							<span class="service-item-title">Веб-сайты</span>
-						</a>
+						<span class="service-item-title">Веб-сайты</span>
 					</h3>
 					<p class="service-item-image">
-						    <a href="service-item1.html">
-						        <img src="img/service-1.svg" width="300" height="146" alt="веб-сайты">
-						    </a>
+						<img src="img/service-1.svg" width="300" height="146" alt="веб-сайты">
 					</p>
 					<p class="service-item-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					</a>
 					<a class="button" href="#">Заказать</a>
 					</li>
-					
 					<li class="service-item">
+					<a href="service-item2.html" aria-label="каталог приложений">
 					<h3>
-						<a href="service-item2.html">
 							<span class="service-item-title">Приложения</span>
-						</a>
 					</h3>
 					<p class="service-item-image">
-						    <a href="service-item2.html">
 						        <img src="img/service-2.svg" width="300" height="146" alt="приложения">
-						    </a>
 					</p>
 					<p class="service-item-info">Покорите топ-10 приложений в AppStore и Google Play</p>
+					</a>
 					<a class="button" href="#">Заказать</a>
 					</li>
 					
 					<li class="service-item">
+					<a href="service-item3.html" aria-label="каталог презентаций">
 					<h3>
-						<a href="service-item3.html">
-							<span class="service-item-title">Презентации</span>
-						</a>
+						<span class="service-item-title">Презентации</span>
 					</h3>
 					<p class="service-item-image">
-						    <a href="service-item3.html">
-						        <img src="img/service-3.svg" width="300" height="146" alt="презентации">
-						    </a>
+						<img src="img/service-3.svg" width="300" height="146" alt="презентации">
 					</p>
 					<p class="service-item-info">Вы даже не подозреваете, насколько вы изумительны!</p>
+					</a>
 					<a class="button" href="#">Заказать</a>
 					</li>
 				</ul>
@@ -103,6 +100,26 @@
 	            <span class="footer-copyright-note">Скидка 10% для друзей из социальных сетей.</span>
             </p>
 		</footer>
+		<section class="popup popup-feedback">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<p class="feedback-title">Напишите нам</p>
+			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+			<label>
+			<input type=text name="name" placeholder="Имя Фамилия">
+			Ваше имя:
+			</label>
+			<label>
+			<input type="text" name="e-mail" placeholder="email@example.com">
+			Ваш e-mail:
+			</label>
+			<label>
+			<textarea name="message" rows="6">В свободной форме</textarea>
+			Текст письма:
+			</label>
+			<button class="button" type="submit">ОТПРАВИТЬ</button> 
+			</form>
+			<button class="popup-close" type="button">Закрыть</button>
+		</section>
 		<script src="js/nerds.js"></script>
 	</body>
 </html> 

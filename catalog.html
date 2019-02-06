@@ -14,19 +14,87 @@
 				<ul class="site-navigation">
 					<li><a href="studio.html">Студия</a></li>
 					<li><a href="client.html">Клиенты</a></li>
-					<li><a href="shop.html">Магазин</a></li>
+					<li><a class="main-navigation-current" href="shop.html">Магазин</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
 				</ul>
 				<ul class="basket-navigation">
-					<li class="basket-link">Вход</li>
+					<li class="basket-link">
+					<a class="basket-link" href="basket.html">
+					Вход
+					</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main class="container">
 			<h1 class="page-title">Магазин готовых шаблонов</h1>
+			<section class="asort">
+				<h2 class="visually-hidden">Сортировка</h2>
+				<!--Здесь будет форма-->
+			</section>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр</h2>
-				<!--Здесь будет форма-->
+				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Сетка:</legend>
+						<ul>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="size" value="adaptive" checked>
+							Адаптивная
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="size" value="fixed">
+							Фиксированная
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-radio" type="radio" name="size" value="stretch">
+							Резиновая
+							</label>
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset> 
+						<legend>ОСОБЕННОСТИ:</legend>
+						<ul>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+							Слайдер
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="features">
+							Блок преимуществ
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+							Новости
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+							Галерея
+							</label>
+							</li>
+							<li class="filter-option">
+							<label>
+							<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
+							Корзина
+							</label>
+							</li>
+						</ul>
+					</fieldset> 
+					<button class="button filter-button" type="submit">ПОКАЗАТЬ</button>
+				</form>
 			</section>
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог сайтов</h2>
@@ -130,6 +198,26 @@
 	            <span class="footer-copyright-note">Скидка 10% для друзей из социальных сетей.</span>
 	        </p>
 		</footer>
+		<section class="popup popup-feedback">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<p class="feedback-title">Напишите нам</p>
+			<form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+			<label>
+			<input type=text name="name" placeholder="Имя Фамилия">
+			Ваше имя:
+			</label>
+			<label>
+			<input type="text" name="e-mail" placeholder="email@example.com">
+			Ваш e-mail:
+			</label>
+			<label>
+			<textarea name="message" rows="6">В свободной форме</textarea>
+			Текст письма:
+			</label>
+			<button class="button" type="submit">ОТПРАВИТЬ</button> 
+			</form>
+			<button class="popup-close" type="button">Закрыть</button>
+		</section>
 		<script src="js/nerds.js"></script>
 	</body>
 </html>
