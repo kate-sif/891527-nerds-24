@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header-inner">
         <nav class="main-navigation">
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.svg" width="220" height="115" alt="логотип">
@@ -22,14 +22,14 @@
             <ul class="basket-navigation">
                 <li class="basket-link">
                     <a class="basket-link" href="basket.html">
-					Вход
+					Корзина
 					</a>
                 </li>
             </ul>
         </nav>
+        <h1 class="page-title">Магазин готовых шаблонов</h1>
     </header>
     <main class="container">
-        <h1 class="page-title">Магазин готовых шаблонов</h1>
         <section class="asort">
             <h2 class="visually-hidden">Сортировка</h2>
             <!--Здесь будет форма-->
@@ -52,7 +52,7 @@
                         </li>
                         <li class="filter-option">
                             <label>
-                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="size" value="stretch"> Резиновая
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="size" value="stretch" disabled> Резиновая
                             </label>
                         </li>
                     </ul>
@@ -174,7 +174,7 @@
         </section>
     </main>
     <footer class="main-footer">
-        <div class="footer-sovial">
+        <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#">Вконтакте</a></li>
                 <li><a class="social-button" href="#">Фейсбук</a></li>
@@ -183,7 +183,8 @@
         </div>
         <p class="footer-copyright">
             <b>Давайте дружить, это выгодно!</b>
-            <span class="footer-copyrighting-note">Скидка 10% для друзей из социальных сетей.</span>
+            <br>
+            <span class="footer-copyright-note">Скидка 10% для друзей из социальных сетей.</span>
         </p>
     </footer>
     <section class="popup popup-feedback">
